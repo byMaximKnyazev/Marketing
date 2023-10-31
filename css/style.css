@@ -1,0 +1,141 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+html {
+	box-size: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-size: inherit;
+}
+
+ul[class],
+ol[class] {
+	padding: 0;
+	list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Merriweather', serif; */
+	/* font-family: 'Montserrat', sans-serif; */
+	/* font-family: 'Raleway', sans-serif; */
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1200px;
+}
+
+.flex {
+	display: flex;
+}
+
+/* ------------------------------ */
+/* Header */
+.header__top {
+	padding-bottom: 29px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.header__top-inner {
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.header__top-item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.header__top-link {
+	padding: 0 6px 9px 6px;
+	text-decoration: none;
+	color: #373A39;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+	transition: border 0.3s ease-in-out;
+}
+
+.header__top-link:hover {
+	border-bottom: 1px solid #FCBB08;
+}
+
+.header__content {
+	font-family: 'Montserrat', sans-serif;
+	background: url('../images/heaader/header-bg.jpg') center center / cover no-repeat;
+}
+
+.header__content-inner {
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	height: calc(100vh - 93px);
+}
+
+.header__content-title {
+	margin-bottom: 20px;
+	color: #FFF;
+	font-size: 72px;
+	font-weight: 500;
+}
+
+.header__content-subtitle {
+	margin-bottom: 180px;
+	color: #FCBB08;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 2.743px;
+}
+
+.header__content-icon {
+	margin-bottom: 62px;
+}
