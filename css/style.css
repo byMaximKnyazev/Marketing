@@ -3,13 +3,13 @@
 &subset=cyrillic-ext 
 */
 html {
-	box-size: border-box;
+	box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-	box-size: inherit;
+	box-sizing: inherit;
 }
 
 ul[class],
@@ -78,6 +78,28 @@ body {
 	display: flex;
 }
 
+.title {
+	position: relative;
+	align-self: start;
+	padding-bottom: 18px;
+	color: #242121;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 125%;
+	letter-spacing: -1.65px;
+}
+
+.title::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	height: 4px;
+	background-color: #FCBB08;
+}
+
 /* ------------------------------ */
 /* Header */
 .header__top {
@@ -138,4 +160,27 @@ body {
 
 .header__content-icon {
 	margin-bottom: 62px;
+}
+
+/* About Us  */
+.about-us {
+	padding: 152px 0 159px;
+	background-color: #F6F8FA;
+}
+
+.about-us__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-us__content {
+	max-width: 770px;
+	color: #373A39;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 171.429%;
+}
+
+.about-us__text:not(:last-child) {
+	margin-bottom: 16px;
 }
