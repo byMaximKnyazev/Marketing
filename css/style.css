@@ -298,3 +298,32 @@ body {
 	font-weight: 300;
 	line-height: 171.429%;
 }
+
+/* Magic */
+.magic {
+	background-color: #F6F8FA;
+	background-image: url('../images/magic/magic-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+
+.magic__inner {
+	margin-left: auto;
+	padding: 100px 0 214px;
+	max-width: 470px;
+}
+
+.magic__title {
+	margin-bottom: 67px;
+}
+
+.magic__text {
+	color: #373A39;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 171.429%;
+}
+
+.magic__text:not(:last-child) {
+	margin-bottom: 25px;
+}
